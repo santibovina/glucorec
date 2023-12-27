@@ -15,12 +15,19 @@
             <h3>Login</h3>
             <form action="" method="POST" target="_blank">
                 <label for="usuario">Usuario: </label><br>
-                <input type="text" size="30" name="usuario" id="usuario" required placeholder="usuario"><br>
+                <input type="text" size="35" name="usuario" id="usuario" required placeholder="usuario"><br>
+
                 <label for="password">Contraseña: </label><br>
-                <input type="password" size="30" name="password" id="password" required placeholder="contraseña"><br><br>
-                <input type="button" value="Ingresar">
-                <a href="#">Olvidaste la contraseña?</a><br>
-                <input id="crearCuenta" type="button" value="Crear cuenta">
+                <input type="password" size="35" name="password" id="password" required placeholder="contraseña"><br>
+                
+                <div class="contraseñaRecordarRecuperar">
+                    <input type="checkbox" name="recordarContraseña" id="recordarContraseña">
+                    <label id="recordarme" for="recordarme">Recordarme<a href="#">Olvidaste la contraseña?</a></label><br><br>
+                </div>
+
+                <input id="botonIngresar" type="button" value="Ingresar">
+                <!-- <hr> -->
+                <p>Nuevo por acá?<input id="BotonCrearCuenta" type="button" value="Crear cuenta"></p>
             </form>
         </div>
     </div>
