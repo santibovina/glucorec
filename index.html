@@ -13,7 +13,7 @@
         </div>
         <div class="formulario__login">
             <h3>Login</h3>
-            <form action="" method="POST" target="_blank">
+            <form onsubmit="event.preventDefault(); iniciarSesion();">
                 <label for="usuario">Usuario: </label><br>
                 <input type="text" size="35" name="usuario" id="usuario" required placeholder="usuario"><br>
 
@@ -25,13 +25,13 @@
                     <label id="recordarme" for="recordarme">Recordarme<a href="#">Olvidaste la contraseña?</a></label><br><br>
                 </div>
 
-                <input id="botonIngresar" type="button" value="Ingresar">
-                <!-- <hr> -->
+                <button id="botonIngresar" type="submit">Ingresar</button>
+                <hr>
                 <p>Nuevo por acá?<input id="BotonCrearCuenta" type="button" value="Crear cuenta"></p>
             </form>
         </div>
     </div>
 
-    
+    <script src="/js/login.js"></script>
 </body>
 </html>
