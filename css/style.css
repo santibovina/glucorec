@@ -111,7 +111,7 @@ input[type="checkbox"] {
     text-decoration: none;
 }
 
-form a:hover {
+#olvidaste:hover {
     text-decoration: underline;
     text-decoration-color: #222222;
 }
