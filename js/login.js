@@ -1,4 +1,4 @@
-const usuarioCorrecto = 'usuario';
+const usuarioCorrecto = 'user@user.com';
 const contrasenaCorrecta = 'pass123';
 
 function iniciarSesion() {
