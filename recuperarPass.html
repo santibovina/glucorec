@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>GLUCOREC</title>
+</head>
+<body>
+    <div class="container__login">
+        <div class="logo__index">
+            <img src="/img/glucorec_logo.svg" alt="logo glucorec">
+        </div>
+        <div class="formulario__recuperarPass">
+            <h3>Recuperar Contraseña</h3>
+            <form onsubmit="event.preventDefault();">
+                <p id="p__recuperarPass">Por favor, ingresá tu dirección de email con la cual te registraste;<br>te enviaremos una nueva contraseña.</p>
+                <br>
+                <label for="usuario">Email: </label><br>
+
+                <div class="inputRecuperarPass">
+                    <input type="text" size="35" name="usuario" id="usuario" required placeholder="user@user.com">
+                    <button id="botonEnviar" type="submit">Enviar</button>
+                </div>
+
+                
+                <hr id="hr__recuperarPass">
+
+                <div class="nuevaCuentaIndex">
+                    <p id="p__recuperarPass">Nuevo por acá?</p>
+                    <a id="crearCuenta" href="formCrearCuenta.html"><button id="BotonCrearCuentaRecuperar" type="button">Crear cuenta</button></a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="/js/login.js"></script>
+</body>
+</html>

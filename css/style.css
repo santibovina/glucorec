@@ -88,6 +88,7 @@ input[type="password"] {
 input[type="text"]:focus {
     border: transparent;
     border-bottom: solid #222222 2px;
+
 }
 
 input[type="password"]:focus {
@@ -140,3 +141,68 @@ form p {
     cursor: pointer;
 }
 
+
+
+
+/* ---------RECUPERAR PASS--------- */
+
+.formulario__recuperarPass {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 9rem;
+    margin-left: 10rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 31rem;
+    background-color: #dbdbdb;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 1px 1px 10px 5px rgba(20, 20, 20, 0.23);
+}
+
+.formulario__recuperarPass h3 {
+    margin-bottom: 1rem;
+    border-bottom: solid #222222 0.5px;
+    width: fit-content;
+    height: 1.6rem;
+}
+
+#p__recuperarPass {
+    line-height: 1.3rem;
+}
+
+.inputRecuperarPass {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+}
+
+#botonEnviar {
+    background-color: #222222;
+    border: 0;
+    color: #ffe66b;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 6rem;
+    height: 2.6rem;
+    cursor: pointer;
+    margin-top: 0.43rem;
+}
+
+#hr__recuperarPass {
+    width: 27rem;
+    margin-top: 1.1rem;
+    margin-bottom: 2rem
+}
+
+#BotonCrearCuentaRecuperar {
+    background-color: #222222;
+    border: 0;
+    color: #ffe66b;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 19rem;
+    cursor: pointer;
+}
