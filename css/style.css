@@ -20,7 +20,7 @@ body {
     flex-wrap: wrap;
 }
 
-.logo__index {
+.container__login-logo {
     margin-top: 18%;
     margin-left: 10%;
 }
@@ -63,7 +63,7 @@ input[type="button"] {
     border-radius: 5px;
 }
 
-#botonIngresar {
+.formulario__login-botonIngresar {
     background-color: #222222;
     border: 0;
     color: #ffe66b;
@@ -96,7 +96,7 @@ input[type="password"]:focus {
     border-bottom: solid #222222 2px;
 }
 
-.contraseñaRecordarRecuperar {
+.formulario__login-recuperar {
     font-size: 0.8rem;
 }
 
@@ -122,7 +122,7 @@ form p {
     width: max-content;
 }
 
-.nuevaCuentaIndex {
+.formulario__login-registro {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -166,11 +166,11 @@ form p {
     height: 1.6rem;
 }
 
-#p__recuperarPass {
+#formulario__recuperarPass-texto {
     line-height: 1.3rem;
 }
 
-.inputRecuperarPass {
+.formulario__recuperarPass-input {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -206,3 +206,15 @@ form p {
     width: 19rem;
     cursor: pointer;
 }
+
+.formulario__recuperarPass-registro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.6rem;
+}
+
+
+/* ---------REGISTRO--------- */
+

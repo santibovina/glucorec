@@ -1,3 +1,5 @@
+//Función validación Login
+
 const usuarioCorrecto = 'user@user.com';
 const contrasenaCorrecta = 'pass123';
 
@@ -12,3 +14,10 @@ function iniciarSesion() {
         alert('Usuario o contraseña incorrectos!');
     }
 }
+
+// Función Alert Recuperar Contraseña
+
+function mailEnviado() {
+    alert("Te enviamos un mail con la nueva contraseña!\nPor favor revisa tu bandeja de entrada o spam.");
+}
+
