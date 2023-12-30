@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>GLUCOREC</title>
+</head>
+<body>
+    <div class="container__login">
+        <!-- <div class="container__login-logo">
+            <img src="/img/glucorec_logo.svg" alt="logo glucorec">
+        </div> -->
+        <div class="formulario__registro">
+
+            <h3>Registro de Nuevo Usuario</h3>
+
+            <fieldset class="formulario__registro-datospersonales">
+                <legend>Datos personales</legend>
+                <br>
+
+                <form onsubmit="event.preventDefault();">
+
+                    <label class="formulario__registro-nombre" for="nombre">Nombre: </label>
+                    <input type="text" size="35" name="nombre" id="nombre" placeholder="Ej: Juan" required>
+
+                    <label class="formulario__registro-apellido" for="apellido">Apellido: </label>
+                    <input type="text" size="35" name="apellido" id="apellido" placeholder="Ej: Pérez" required>
+
+                    <label class="formulario__registro-edad" for="edad">Edad: </label>
+                    <input type="text" size="3" name="edad" id="edad" placeholder="Por favor ingresa un número entero" required>
+
+                    <label class="formulario__registro-nacimiento" for="nacimiento">Fecha de Nacimiento: </label>
+                    <input type="date" name="nacimiento" id="nacimiento" required>
+
+                    <label for="usuario">Email: </label><br>
+                    <input type="text" size="35" name="usuario" id="usuario" placeholder="user@user.com" required><br>
+
+                </form>
+            </fieldset>
+
+            <fieldset class="formulario__registro-datosdiabetes">
+                <legend>Información sobre la Diabetes</legend>
+                <form action="">
+
+                    <label class="formulario__registro-tipodiabetes" for="tipo">Tipo: </label>
+                    <input type="radio" name="tipo" id="tipo" value="1">1
+                    <input type="radio" name="tipo" id="tipo" value="2">2
+                    <br>
+                    <label class="formulario__registro-aniosevolucion" for="evolucion">Años de evolución: </label>
+                    <input type="number" name="evolucion" id="evolucion" min="0">
+                    <br>
+                    <label class="formulario__registro-edadevolucion" for="edadevolucion">Edad al diagnóstico: </label>
+                    <input type="number" name="edadevolucion" id="edadevolucion" min="0">
+                    <br>
+                    <label for="formulario__registro-insulinas">Utilizas insulinas? </label>
+                    <input type="radio" name="usoinsulina" id="usoinsulina" value="1">Si
+                    <input type="radio" name="usoinsulina" id="usoinsulina" value="2">No
+                    <br>
+                    <label for="formulario__registro-insulinas">Cuáles? </label>
+                    <label for="formulario__registro-insulinas">Basal: </label>
+                        <select name="insulinas-basal" id="insulinas-basal">
+                            <option value=""></option>
+                            <option value="insulina-tipo-1">Toujeo Solostar</option>
+                            <option value="insulina-tipo-2">Toujeo Doublestar</option>
+                            <option value="insulina-tipo-3">Lantus Solostar</option>
+                            <option value="insulina-tipo-4">Lyxumia</option>
+                        </select>
+                    <label for="formulario__registro-insulinas">Rápida: </label>
+                        <select name="insulinas-rapida" id="insulinas-rapida">
+                            <option value=""></option>
+                            <option value="insulina-tipo-1">Apidra</option>
+                        </select>
+                </form>
+            </fieldset>
+            
+        </div>
+    </div>
+
+    <script src="/js/login.js"></script>
+</body>
+</html>
