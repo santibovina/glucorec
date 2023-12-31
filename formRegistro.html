@@ -15,6 +15,8 @@
 
             <h3>Registro de Nuevo Usuario</h3>
 
+            <br>
+
             <fieldset class="formulario__registro-datospersonales">
                 <legend>Datos personales</legend>
                 <br>
@@ -39,6 +41,8 @@
                 </form>
             </fieldset>
 
+            <br>
+
             <fieldset class="formulario__registro-datosdiabetes">
                 <legend>Información sobre la Diabetes</legend>
                 <form action="">
@@ -53,11 +57,11 @@
                     <label class="formulario__registro-edadevolucion" for="edadevolucion">Edad al diagnóstico: </label>
                     <input type="number" name="edadevolucion" id="edadevolucion" min="0">
                     <br>
-                    <label for="formulario__registro-insulinas">Utilizas insulinas? </label>
+                    <label for="formulario__registro-insulinas">Utilizas insulinas? : </label>
                     <input type="radio" name="usoinsulina" id="usoinsulina" value="1">Si
                     <input type="radio" name="usoinsulina" id="usoinsulina" value="2">No
                     <br>
-                    <label for="formulario__registro-insulinas">Cuáles? </label>
+                    <label for="formulario__registro-insulinas">Cuáles? : </label>
                     <label for="formulario__registro-insulinas">Basal: </label>
                         <select name="insulinas-basal" id="insulinas-basal">
                             <option value=""></option>
@@ -66,12 +70,91 @@
                             <option value="insulina-tipo-3">Lantus Solostar</option>
                             <option value="insulina-tipo-4">Lyxumia</option>
                         </select>
+                        <label for="insulinas-basal-cantidad">Cantidad diaria: </label>
+                        <input type="number" name="insulina-basal-cantidad" id="insulina-basal-cantidad">
+                        <br>
                     <label for="formulario__registro-insulinas">Rápida: </label>
                         <select name="insulinas-rapida" id="insulinas-rapida">
                             <option value=""></option>
                             <option value="insulina-tipo-1">Apidra</option>
                         </select>
+                        <label for="insulinas-rapida-cantidad">Cantidad diaria: </label>
+                        <input type="number" name="insulina-rapida-cantidad" id="insulina-rapida-cantidad">
+                    <br>
+                    <label for="formulario__registro-insulinas-otras">Si tu tratamiento es con pastillas, detallanos por favor cuáles son: </label>
+                    <textarea name="formulario__registro-insulinas-comentarios" id="formulario__registro-insulinas-comentarios" cols="30" rows="3" wrap="soft"></textarea>
+                    <br>
+                    <label for="formulario__registro-controles">Realizas controles de glucemia? : </label>
+                    <input type="radio" name="hagocontroles" id="hagocontroles" value="1">Si
+                    <input type="radio" name="hagocontroles" id="hagocontroles" value="2">No
+                    <br>
+                    <label for="formulario__registro-controles-cantidad">Cuántas mediciones diarias de control te haces? : </label>
+                    <input type="number" name="formulario__registro-controles-cantidad" id="formulario__registro-controles-cantidad" min="0">
+                    <br>
+                    <label for="formulario__registro-controles-texto-opcional">Si quieres puedes detallarnos la marca del glucómetro que utilizas: </label>
+                    <textarea name="formulario__registro-controles-texto-opcional" id="formulario__registro-controles-texto-opcional"
+                        cols="30" rows="3" wrap="soft"></textarea>
+                    <br>
+                    
+                    <label for="formulario__registro-hipoglucemias">Tienes hipoglucemias / hiperglucemias? :</label>
+                    <input type="checkbox" name="formulario__registro-hipoglucemias-hipos" id="formulario__registro-hipoglucemias-hipos">Hipoglucemias
+                    <input type="checkbox" name="formulario__registro-hipoglucemias-hiper" id="formulario__registro-hipoglucemias-hiper">Hiperglucemias
+                    <br>
+                    <label for="formulario__registro-hipoglucemias-horario">En qué horario suceden habitualmente? :</label>
+                    <input type="radio" name="formulario__registro-hipoglucemias-horario" id="formulario__registro-hipoglucemias-horario" value="hipoglucemias-horario-mañana">Mañana
+                    <input type="radio" name="formulario__registro-hipoglucemias-horario" id="formulario__registro-hipoglucemias-horario" value="hipoglucemias-horario-tarde">Tarde
+                    <input type="radio" name="formulario__registro-hipoglucemias-horario" id="formulario__registro-hipoglucemias-horario" value="hipoglucemias-horario-noche">Noche
+                    <input type="radio" name="formulario__registro-hipoglucemias-horario" id="formulario__registro-hipoglucemias-horario" value="hipoglucemias-horario-madrugada">Madrugada
+                    <br>
+
+                    <label for="formulario__registro-hemoglobina">Cuál fue el valor de la última hemoglobina glicosilada? :</label>    
+                    <input type="number" name="formulario__registro-hemoglobina-valor" id="formulario__registro-hemoglobina-valor">
+                    <br>
+                    <label for="formulario__registro-hemoglobina">Fecha de la última hemoglobina glicosilada? :</label>
+                    <input type="date" name="formulario__registro-hemoglobina-fecha" id="formulario__registro-hemoglobina-fecha">
+                    <br>
+                    <label for="formulario__registro-obrasocial">Tienes obra social? : </label>
+                    <input type="radio" name="obrasocial" id="obrasocial" value="1">Si
+                    <input type="radio" name="obrasocial" id="obrasocial" value="2">No
+                    <label for="formulario__registro-obrasocial-opciones">Cuál? : </label>
+                        <select name="obrasocial" id="opciones-obrasocial">
+                            <option value="obrasocial-none"></option>
+                            <option value="obrasocial1">Apross</option>
+                            <option value="obrasocial2">MET - Medicina Prepaga</option>
+                            <option value="obrasocial3">OSPIQyP</option>
+                            <option value="obrasocial4">PAMI</option>
+                            <option value="obrasocial5">OSDOP</option>
+                            <option value="obrasocial6">Sancor Salud</option>
+                            <option value="obrasocial-otras">Otras</option><textarea name="formulario__registro-obrasocial-opciones-texto"
+                                id="formulario__registro-obrasocial-opciones-texto" cols="45"
+                                rows="1">Si tu obra social no está en el listado, por favor escribila acá.</textarea>
+                        </select>
+                    <br>
+
+                    <label for="formulario__registro-profesional">Nombre del profesional que controla tu diabetes: </label>
+                    <textarea name="formulario__registro-profesional-nombre" id="formulario__registro-profesional-nombre" cols="30" rows="3"></textarea>
+                    <br>
+                    <label for="formulario__registro-profesional-periodicidad">Cada cuánto visitas a tu médico? : </label>
+                    <select name="formulario__registro-profesional-periodicidad" id="formulario__registro-profesional-periodicidad">
+                        <option value=""></option>
+                        <option value="mes">Mensualmente</option>
+                        <option value="bimestre">Cada 2 meses</option>
+                        <option value="trimestre">Trimestralmente</option>
+                        <option value="semestre">Cada 6 meses</option>
+                        <option value="año">Una vez por año</option>
+                        <option value="masaño">Mayor a 1 año</option>
+                    </select>
+                    <br>
+
+                    <label for="formulario__registro-profesional-fechaultimocontrol">Fecha último control: </label>
+                    <input type="date" name="formulario__registro-profesional-fechaultimocontrol" id="formulario__registro-profesional-fechaultimocontrol">
                 </form>
+            </fieldset>
+
+            <br>
+
+            <fieldset class="formulario__registro-informacion-personal">
+                <legend>Información Personal</legend>
             </fieldset>
             
         </div>
