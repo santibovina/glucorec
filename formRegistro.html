@@ -8,9 +8,9 @@
 </head>
 <body>
     <div class="container__login">
-        <!-- <div class="container__login-logo">
+        <div class="formulario__registro-logo">
             <img src="/img/glucorec_logo.svg" alt="logo glucorec">
-        </div> -->
+        </div>
         <div class="formulario__registro">
 
             <h3>Registro de Nuevo Usuario</h3>
@@ -108,10 +108,16 @@
                     <br>
 
                     <label for="formulario__registro-hemoglobina">Cuál fue el valor de la última hemoglobina glicosilada? :</label>    
-                    <input type="number" name="formulario__registro-hemoglobina-valor" id="formulario__registro-hemoglobina-valor">
+                    <input type="number" name="formulario__registro-hemoglobina-valor" id="formulario__registro-hemoglobina-valor" min="0">
                     <br>
                     <label for="formulario__registro-hemoglobina">Fecha de la última hemoglobina glicosilada? :</label>
                     <input type="date" name="formulario__registro-hemoglobina-fecha" id="formulario__registro-hemoglobina-fecha">
+                    <br>
+                    <label for="formulario__registro-hemoglobina">Cuál fue el valor de la última microalbuminuria? :</label>    
+                    <input type="number" name="formulario__registro-hemoglobina-valor" id="formulario__registro-hemoglobina-valor" min="0">
+                    <br>
+                    <label for="formulario__registro-microalbuminuria">Fecha de la última microalbuminuria? :</label>
+                    <input type="date" name="formulario__registro-microalbuminuria-fecha" id="formulario__registro-microalbuminuria-fecha">
                     <br>
                     <label for="formulario__registro-obrasocial">Tienes obra social? : </label>
                     <input type="radio" name="obrasocial" id="obrasocial" value="1">Si
@@ -153,9 +159,33 @@
 
             <br>
 
-            <fieldset class="formulario__registro-informacion-personal">
+            <fieldset class="formulario__registro-info-personal">
                 <legend>Información Personal</legend>
+                <form action="">
+                    <label for="formulario__registro-info-personal-peso">Cuánto pesas? :</label>
+                    <input type="text" name="formulario__registro-info-personal-peso" id="formulario__registro-info-personal-peso">kgs.
+                    <br>
+                    <label for="formulario__registro-info-personal-altura">Cuánto mides? :</label>
+                    <input type="text" name="formulario__registro-info-personal-altura" id="formulario__registro-info-personal-altura">mts.
+                    <br>
+                    <label for="formulario__registro-info-personal-fdo">Resultado último fondo de ojos: </label>
+                    <input type="text" name="formulario__registro-info-personal-fdo" id="formulario__registro-info-personal-fdo">
+                    <label for="formulario__registro-info-personal-fdo-fecha">Fecha de último fondo de ojos</label>
+                    <input type="date" name="formulario__registro-info-personal-fdo-fecha" id="formulario__registro-info-personal-fdo-fecha">
+                    <br>
+                    <label for="formulario__registro-info-personal-altura">Colesterol :</label>
+                    <input type="text" name="formulario__registro-info-personal-altura" id="formulario__registro-info-personal-altura">
+                    <br>
+                    <label for="formulario__registro-info-personal-varios">Tilda la que corresponda: </label>
+                    <input type="checkbox" name="formulario__registro-info-personal-varios-fumar"
+                        id="formulario__registro-info-personal-varios-fumar">Fumo
+                    <input type="checkbox" name="formulario__registro-info-personal-varios-bebidas"
+                        id="formulario__registro-info-personal-varios-bebidas">Consumo bebidas alcohólicas
+                    <input type="checkbox" name="formulario__registro-info-personal-varios-drogas"
+                        id="formulario__registro-info-personal-varios-drogas">Consumo drogas
+                </form>
             </fieldset>
+            <input type="button" value="Enviar"><input type="button" value="Cancelar">
             
         </div>
     </div>
