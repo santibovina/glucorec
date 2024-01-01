@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>GLUCOREC</title>
+</head>
+<body>
+    <div class="container__login">
+        <div class="container__login-logo">
+            <img src="/img/glucorec_logo.svg" alt="logo glucorec">
+        </div>
+        <div class="formulario__login">
+            <h3>Login</h3>
+            <form onsubmit="event.preventDefault(); iniciarSesion();">
+                <label for="usuario">Email: </label><br>
+                <input type="text" size="35" name="usuario" id="usuario" placeholder="user@user.com" required><br>
+
+                <label for="password">Contraseña: </label><br>
+                <input type="password" size="35" name="password" id="password" placeholder="contraseña" required><br>
+                
+                <div class="formulario__login-recuperar">
+                    <input type="checkbox" name="recordarContraseña" id="recordarContraseña">
+                    <label id="recordarme" for="recordarme">Recordarme<a id="olvidaste" href="recuperarPass.html">Olvidaste la contraseña?</a></label><br><br>
+                </div>
+
+                <button class="formulario__login-botonIngresar" id="botonIngresar" type="submit">Ingresar</button>
+                <hr>
+
+                <div class="formulario__login-registro">
+                    <p>Nuevo por acá?</p>
+                    <a id="crearCuenta" href="formRegistro.html"><button id="BotonCrearCuenta" type="button">Crear cuenta</button></a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="/js/login.js"></script>
+</body>
+</html>
