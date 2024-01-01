@@ -9,7 +9,7 @@ function iniciarSesion() {
 
     if (usuario === usuarioCorrecto && password === contrasenaCorrecta) {
         // Redirigir a LA PAGINA INDEX O A DONDE LO QUIERAS MANDAR
-        window.location.href = 'https://www.google.com';
+        window.location.href = 'index.html';
     } else {
         alert('Usuario o contraseña incorrectos!');
     }
