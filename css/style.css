@@ -13,7 +13,7 @@ body {
 }
 
 
-/* ---------INDEX--------- */
+/* ---------LOGIN--------- */
 
 .container__login {
     display: flex;
@@ -88,7 +88,6 @@ input[type="password"] {
 input[type="text"]:focus {
     border: transparent;
     border-bottom: solid #222222 2px;
-
 }
 
 input[type="password"]:focus {
@@ -216,5 +215,92 @@ form p {
 }
 
 
-/* ---------REGISTRO--------- */
+/* ---------INDEX--------- */
+
+.header__principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+    height: 5rem;
+    margin-bottom: 5rem;
+}
+
+.principal__principal {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal__principal-titulo {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.principal__principal-valor {
+    height: 12rem;
+}
+
+.principal__principal-formulario {
+    width: 55rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 1px 1px 10px 5px rgba(20, 20, 20, 0.23);
+}
+
+input[type="number"].principal__principal-valor {
+    border: 0;
+    font-size: 8rem;
+    width: 15rem;
+    border: none;
+    background-color: #f2f2f2;
+    height: fit-content;
+    outline: none;
+}
+
+input[type="number"].principal__principal-valor::placeholder {
+    font-size: 1rem;
+}
+
+
+input[type="number"].principal__principal-valor:focus {
+    border: transparent;
+    border-bottom: solid #222222 2px;
+}
+
+input[type="datetime-local"] {
+    border: 0;
+    font-size: 1rem;
+    width: 15rem;
+    border: none;
+    background-color: #f2f2f2;
+    outline: none;
+}
+
+input[type="button"].principal__principal-boton-registrar {
+    background-color: #222222;
+    border: 0;
+    color: #ffe66b;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 6rem;
+    height: 2.6rem;
+    cursor: pointer;
+    margin-top: 0.43rem;
+}
+
+input[type="button"].principal__principal-boton-cancelar {
+    background-color: #222222;
+    border: 0;
+    color: #ffe66b;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 6rem;
+    height: 2.6rem;
+    cursor: pointer;
+    margin-top: 0.43rem;
+}
 
