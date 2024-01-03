@@ -222,28 +222,45 @@ form p {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items:center;
-    height: 5rem;
-    margin-bottom: 5rem;
+    height: 4rem;
+    margin-bottom: 1rem;
+}
+
+.menu__principal-logo img {
+    width: 75%;
+}
+
+.menu__principal a {
+    margin-right: 2rem;
 }
 
 .principal__principal {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    margin-left: 15rem;
+    height: 40rem;
 }
 
 .principal__principal-titulo {
-    font-size: 3rem;
+    font-size: 1.8rem;
     margin-bottom: 2rem;
+    border-bottom: solid #222222 0.5px;
+    width: fit-content;
+    height: 2.3rem;
 }
 
 .principal__principal-valor {
     height: 12rem;
 }
 
+.principal__principal-fecha {
+    margin-top: 2rem;
+}
+
 .principal__principal-formulario {
-    width: 55rem;
+    width: 23rem;
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 1px 1px 10px 5px rgba(20, 20, 20, 0.23);
@@ -278,6 +295,11 @@ input[type="datetime-local"] {
     outline: none;
 }
 
+.principal__principal-botones {
+    display: flex;
+    gap: 1.5rem;
+}
+
 input[type="button"].principal__principal-boton-registrar {
     background-color: #222222;
     border: 0;
@@ -285,16 +307,16 @@ input[type="button"].principal__principal-boton-registrar {
     border-radius: 5px;
     font-size: 1rem;
     padding: 0.5rem;
-    width: 6rem;
+    width: 11rem;
     height: 2.6rem;
     cursor: pointer;
     margin-top: 0.43rem;
 }
 
 input[type="button"].principal__principal-boton-cancelar {
-    background-color: #222222;
-    border: 0;
-    color: #ffe66b;
+    background-color: #f2f2f2;
+    border: solid 1px #222222;
+    color: #222222;
     border-radius: 5px;
     font-size: 1rem;
     padding: 0.5rem;
@@ -304,3 +326,18 @@ input[type="button"].principal__principal-boton-cancelar {
     margin-top: 0.43rem;
 }
 
+.principal__principal-footer {
+    display: flex;
+    height: 3rem;
+    color: #f2f2f2;
+    background-color: #222222;
+    font-weight: 100;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.principal__principal-footer a{
+    text-decoration: none;
+    color: #ffe66b;
+}
