@@ -33,14 +33,13 @@
     <main>
 
         <div class="principal__principal-botones-opciones" id="botones-opciones-vue">
-            <p>  {{ mensaje }} </p>
             <br>
-            <input class="principal__principal-boton-nuevo" type="button" value="Nuevo ingreso">
-            <input class="principal__principal-boton-datos" type="button" value="Datos recolectados">
+            <button onclick="mostrarNuevoIngresoBtn()" class="principal__principal-boton-nuevo">Nuevo ingreso</button>
+            <button class="principal__principal-boton-datos">Datos recolectados</button>
         </div>
 
         <div class="principal__principal">
-            <form class="principal__principal-formulario" action="">
+            <form class="principal__principal-formulario" action="" id="principal__principal-formulario">
                 <h3 class="principal__principal-titulo">Nuevo Ingreso: </h3>
                 <div class="principal__principal-valor">
                     <label for="principal__principal-valor">Ingresá el valor obtenido: </label>
@@ -54,8 +53,8 @@
                 </div>
                 <br>
                 <div class="principal__principal-botones">
-                    <input class="principal__principal-boton-registrar" type="button" value="Registrar">
-                    <input class="principal__principal-boton-cancelar" type="button" value="Cancelar">
+                    <button class="principal__principal-boton-registrar">Registrar</button>
+                    <button class="principal__principal-boton-cancelar" onclick="cancelarIngreso()">Cancelar</button>
                 </div>
             </form>
         </div>
@@ -65,6 +64,7 @@
     </footer>
 
     <script src="/js/vue.js"></script>
+    <script src="/js/login.js"></script>
 
 </body>
 </html>

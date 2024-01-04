@@ -21,3 +21,14 @@ function mailEnviado() {
     alert("Te enviamos un mail con la nueva contraseña!\nPor favor revisa tu bandeja de entrada o spam.");
 }
 
+// Función click Nuevo Ingreso
+
+function mostrarNuevoIngresoBtn() {
+    let formShow = document.getElementById('principal__principal-formulario');
+    formShow.style.visibility = 'visible';
+}
+
+function cancelarIngreso() {
+    let formHide = document.getElementById('principal__principal-formulario');
+    formHide.style.visibility = 'hidden';
+}
