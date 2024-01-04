@@ -7,6 +7,7 @@
     <title>GLUCOREC</title>
     <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css" />
     <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     
 </head>
 <body>
@@ -27,8 +28,17 @@
                 <!-- crear avatar usuario con menu desplegable -->
             </div>
         </div>
+        
     </header>
     <main>
+
+        <div class="principal__principal-botones-opciones" id="botones-opciones-vue">
+            <p>  {{ mensaje }} </p>
+            <br>
+            <input class="principal__principal-boton-nuevo" type="button" value="Nuevo ingreso">
+            <input class="principal__principal-boton-datos" type="button" value="Datos recolectados">
+        </div>
+
         <div class="principal__principal">
             <form class="principal__principal-formulario" action="">
                 <h3 class="principal__principal-titulo">Nuevo Ingreso: </h3>
@@ -53,5 +63,8 @@
     <footer class="principal__principal-footer">
         <p>Desarrollado por <a href="https://www.linkedin.com/in/santiagobovina">Santiago Bovina</a></p>
     </footer>
+
+    <script src="/js/vue.js"></script>
+
 </body>
 </html>

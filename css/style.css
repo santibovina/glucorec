@@ -220,18 +220,63 @@ form p {
 .header__principal {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items:center;
     height: 4rem;
     margin-bottom: 1rem;
 }
 
 .menu__principal-logo img {
-    width: 75%;
+    margin-left: 3rem;
+    width: 60%;
 }
 
 .menu__principal a {
     margin-right: 2rem;
+    color: #222222;
+    text-decoration: none;
+}
+
+.menu__usuario {
+    margin-right: 3rem;
+}
+
+.principal__principal-botones-opciones {
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.principal__principal-botones-opciones p {
+    font-size: 2rem;
+
+}
+
+input[type="button"].principal__principal-boton-nuevo {
+    background-color: #222222;
+    border: 0;
+    color: #ffe66b;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 11rem;
+    height: 4rem;
+    cursor: pointer;
+    margin-top: 0.43rem;
+}
+
+input[type="button"].principal__principal-boton-datos {
+    background-color: #222222;
+    border: 0;
+    color: #ffe66b;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 11rem;
+    height: 4rem;
+    cursor: pointer;
+    margin-top: 0.43rem;
 }
 
 .principal__principal {
