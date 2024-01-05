@@ -28,13 +28,20 @@ function mostrarNuevoIngresoBtn() {
     formShow.style.visibility = 'visible';
 }
 
-function cancelarIngreso() {
+function cancelarIngreso(event) {
     let formHide = document.getElementById('principal__principal-formulario');
     formHide.style.visibility = 'hidden';
+    event.preventDefault();
 }
 
 function hideButton() {
     let buttonHidden = document.getElementById('btnNuevoIngreso');
     buttonHidden.style.visibility = 'hidden';
 }
+
+function toggleForm() {
+    var element = document.getElementById("btnNuevoIngreso");
+    element.classList.toggle("principal__principal-formulario");
+    element.style.visibility = 'visible'
+ }
 

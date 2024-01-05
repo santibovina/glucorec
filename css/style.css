@@ -310,6 +310,7 @@ form p {
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 1px 1px 10px 5px rgba(20, 20, 20, 0.23);
+    margin-left: 3rem;
     visibility: hidden;
 }
 
