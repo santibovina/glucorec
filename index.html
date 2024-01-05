@@ -32,23 +32,24 @@
     </header>
     <main>
 
-        <div class="principal__principal-botones-opciones" id="botones-opciones-vue">
-            <br>
-            <button onclick="mostrarNuevoIngresoBtn()" class="principal__principal-boton-nuevo">Nuevo ingreso</button>
+        <div class="principal__principal-botones-opciones">
+            <button onclick="mostrarNuevoIngresoBtn(); hideButton()" class="principal__principal-boton-nuevo"
+                id="btnNuevoIngreso">Nuevo ingreso</button>
             <button class="principal__principal-boton-datos">Datos recolectados</button>
         </div>
-
+        
         <div class="principal__principal">
             <form class="principal__principal-formulario" action="" id="principal__principal-formulario">
                 <h3 class="principal__principal-titulo">Nuevo Ingreso: </h3>
                 <div class="principal__principal-valor">
                     <label for="principal__principal-valor">Ingresá el valor obtenido: </label>
                     <br>
-                    <input class="principal__principal-valor" type="number" name="principal__principal-valor" id="principal__principal-valor" placeholder="Ingresá el valor acá">mg/dl
+                    <input class="principal__principal-valor" type="number" name="principal__principal-valor"
+                        id="principal__principal-valor" placeholder="Ingresá el valor acá">mg/dl
                 </div>
                 <div class="principal__principal-fecha">
-                    <label for="principal__principal-fecha">Ingresá la fecha del control: </label>        
-                    <br>      
+                    <label for="principal__principal-fecha">Ingresá la fecha del control: </label>
+                    <br>
                     <input type="datetime-local" name="principal__principal-fecha" id="principal__principal-fecha">
                 </div>
                 <br>
@@ -63,7 +64,6 @@
         <p>Desarrollado por <a href="https://www.linkedin.com/in/santiagobovina">Santiago Bovina</a></p>
     </footer>
 
-    <script src="/js/vue.js"></script>
     <script src="/js/login.js"></script>
 
 </body>

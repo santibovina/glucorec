@@ -32,3 +32,9 @@ function cancelarIngreso() {
     let formHide = document.getElementById('principal__principal-formulario');
     formHide.style.visibility = 'hidden';
 }
+
+function hideButton() {
+    let buttonHidden = document.getElementById('btnNuevoIngreso');
+    buttonHidden.style.visibility = 'hidden';
+}
+

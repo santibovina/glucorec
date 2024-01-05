@@ -244,8 +244,9 @@ form p {
 .principal__principal-botones-opciones {
     display: flex;
     gap: 5rem;
+    margin-top: 13rem;
     justify-content: center;
-    margin-top: 3rem;
+    align-items: center;
 }
 
 .principal__principal-botones-opciones p {
