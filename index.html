@@ -31,16 +31,14 @@
         
     </header>
     <main>
-
-        <div class="principal__principal-botones-opciones">
-            <button onclick="mostrarNuevoIngresoBtn()" class="principal__principal-boton-nuevo"
-                id="btnNuevoIngreso">Nuevo ingreso</button>
-            <button class="principal__principal-boton-datos">Datos recolectados</button>
-        </div>
-        
         <div class="principal__principal">
+            <div class="principal__principal-botones-opciones">
+                <button onclick="showForm()" class="principal__principal-boton-nuevo"
+                    id="btnNuevoIngreso">Nuevo ingreso</button>
+                <button class="principal__principal-boton-datos">Datos recolectados</button>
+            </div>
+        
             <form class="principal__principal-formulario" action="" id="principal__principal-formulario">
-                <h3 class="principal__principal-titulo">Nuevo Ingreso: </h3>
                 <div class="principal__principal-valor">
                     <label for="principal__principal-valor">Ingresá el valor obtenido: </label>
                     <br>
@@ -55,13 +53,14 @@
                 <br>
                 <div class="principal__principal-botones">
                     <button class="principal__principal-boton-registrar">Registrar</button>
-                    <button class="principal__principal-boton-cancelar" onclick="cancelarIngreso()">Cancelar</button>
+                    <button class="principal__principal-boton-cancelar" onclick="cancelarIngreso(event)">Cancelar</button>
                 </div>
             </form>
+
         </div>
     </main>
     <footer class="principal__principal-footer">
-        <p>Desarrollado por <a href="https://www.linkedin.com/in/santiagobovina">Santiago Bovina</a></p>
+        <p>Desarrollado por <a href="https://www.linkedin.com/in/santiagobovina" target="_blank">Santiago Bovina</a></p>
     </footer>
 
     <script src="/js/login.js"></script>

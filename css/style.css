@@ -243,15 +243,15 @@ form p {
 
 .principal__principal-botones-opciones {
     display: flex;
+    flex-direction: column;
     gap: 5rem;
-    margin-top: 13rem;
+    /* margin-top: 13rem; */
     justify-content: center;
     align-items: center;
 }
 
 .principal__principal-botones-opciones p {
     font-size: 2rem;
-
 }
 
 .principal__principal-boton-nuevo {
@@ -286,15 +286,9 @@ form p {
     justify-content: left;
     align-items: center;
     margin-left: 15rem;
-    height: 40rem;
-}
-
-.principal__principal-titulo {
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-    border-bottom: solid #222222 0.5px;
-    width: fit-content;
-    height: 2.3rem;
+    overflow: hidden;
+    height: 35rem;
+    margin-bottom: 4rem;
 }
 
 .principal__principal-valor {
@@ -306,12 +300,14 @@ form p {
 }
 
 .principal__principal-formulario {
+    display: flex;
+    flex-direction: column;
     width: 23rem;
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 1px 1px 10px 5px rgba(20, 20, 20, 0.23);
-    margin-left: 3rem;
-    visibility: hidden;
+    margin-left: 14.3rem;
+    display: none;
 }
 
 input[type="number"].principal__principal-valor {
@@ -383,9 +379,10 @@ input[type="datetime-local"] {
     font-size: 1rem;
     justify-content: center;
     align-items: center;
+
 }
 
-.principal__principal-footer a{
+.principal__principal-footer a {
     text-decoration: none;
     color: #ffe66b;
 }

@@ -23,25 +23,13 @@ function mailEnviado() {
 
 // Función click Nuevo Ingreso
 
-function mostrarNuevoIngresoBtn() {
-    let formShow = document.getElementById('principal__principal-formulario');
-    formShow.style.visibility = 'visible';
+function showForm() {
+    let formPrincipal = document.getElementById('principal__principal-formulario');
+    formPrincipal.style.display = 'flex';
 }
 
 function cancelarIngreso(event) {
-    let formHide = document.getElementById('principal__principal-formulario');
-    formHide.style.visibility = 'hidden';
     event.preventDefault();
+    let formPrincipal = document.getElementById('principal__principal-formulario');
+    formPrincipal.style.display = 'none';
 }
-
-function hideButton() {
-    let buttonHidden = document.getElementById('btnNuevoIngreso');
-    buttonHidden.style.visibility = 'hidden';
-}
-
-function toggleForm() {
-    var element = document.getElementById("btnNuevoIngreso");
-    element.classList.toggle("principal__principal-formulario");
-    element.style.visibility = 'visible'
- }
-
