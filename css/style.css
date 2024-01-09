@@ -265,6 +265,7 @@ form p {
     height: 4rem;
     cursor: pointer;
     margin-top: 0.43rem;
+    visibility: visible;
 }
 
 .principal__principal-boton-datos {

@@ -33,7 +33,7 @@
     <main>
         <div class="principal__principal">
             <div class="principal__principal-botones-opciones">
-                <button onclick="showForm()" class="principal__principal-boton-nuevo"
+                <button onclick="showForm();hideButton()" class="principal__principal-boton-nuevo"
                     id="btnNuevoIngreso">Nuevo ingreso</button>
                 <button class="principal__principal-boton-datos">Datos recolectados</button>
             </div>
@@ -43,17 +43,17 @@
                     <label for="principal__principal-valor">Ingresá el valor obtenido: </label>
                     <br>
                     <input class="principal__principal-valor" type="number" name="principal__principal-valor"
-                        id="principal__principal-valor" placeholder="Ingresá el valor acá">mg/dl
+                        id="principal__principal-valor" placeholder="Ingresá el valor acá" required>mg/dl
                 </div>
                 <div class="principal__principal-fecha">
                     <label for="principal__principal-fecha">Ingresá la fecha del control: </label>
                     <br>
-                    <input type="datetime-local" name="principal__principal-fecha" id="principal__principal-fecha">
+                    <input type="datetime-local" name="principal__principal-fecha" id="principal__principal-fecha" required>
                 </div>
                 <br>
                 <div class="principal__principal-botones">
-                    <button class="principal__principal-boton-registrar">Registrar</button>
-                    <button class="principal__principal-boton-cancelar" onclick="cancelarIngreso(event)">Cancelar</button>
+                    <button class="principal__principal-boton-registrar" onclick="registrarDato()">Registrar</button>
+                    <button class="principal__principal-boton-cancelar" id="btnCancelarIngreso" onclick="cancelarIngreso(event); showButton()">Cancelar</button>
                 </div>
             </form>
 
