@@ -1,7 +1,7 @@
 //Función validación Login
 
 const usuarioCorrecto = 'user@user.com';
-const contrasenaCorrecta = 'pass123';
+const contrasenaCorrecta = '123456';
 
 function iniciarSesion() {
     const usuario = document.getElementById('usuario').value;
