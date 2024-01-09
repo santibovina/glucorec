@@ -243,9 +243,6 @@ form p {
 
 .principal__principal-botones-opciones {
     display: flex;
-    flex-direction: column;
-    gap: 5rem;
-    /* margin-top: 13rem; */
     justify-content: center;
     align-items: center;
 }
@@ -264,11 +261,10 @@ form p {
     width: 11rem;
     height: 4rem;
     cursor: pointer;
-    margin-top: 0.43rem;
     visibility: visible;
 }
 
-.principal__principal-boton-datos {
+/* .principal__principal-boton-datos {
     background-color: #222222;
     border: 0;
     color: #ffe66b;
@@ -279,16 +275,16 @@ form p {
     height: 4rem;
     cursor: pointer;
     margin-top: 0.43rem;
-}
+} */
 
 .principal__principal {
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
-    margin-left: 15rem;
+    /* margin-left: 15rem; */
     overflow: hidden;
-    height: 35rem;
+    height: 30rem;
     margin-bottom: 4rem;
 }
 
@@ -307,7 +303,7 @@ form p {
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: 1px 1px 10px 5px rgba(20, 20, 20, 0.23);
-    margin-left: 14.3rem;
+    margin-left: -10rem;
     display: none;
 }
 
