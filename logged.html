@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>GLUCOREC</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
+    
+</head>
+<body>
+    <header class="header__principal">
+        <div class="menu__principal-logo">
+            <a href="index.html"><img src="/img/glucorec_logo.svg" alt="logo glucorec"></a>
+        </div>
+        <div class="menu__principal">
+            <a href="">Inicio</a>
+            <a href="">Registros</a>
+            <a href="">Gráficos</a>
+        </div>
+        <div class="menu__usuario">
+            <div class="menu__usuario-nombre">
+                <p>Usuario</p>
+            </div>
+            <div class="menu__usuario-imagen">
+                <!-- crear avatar usuario con menu desplegable -->
+            </div>
+        </div>
+        
+    </header>
+    <main>
+        <div class="principal__principal">
+            <div class="principal__principal-botones-opciones">
+                <button onclick="showForm();hideButton()" class="principal__principal-boton-nuevo"
+                    id="btnNuevoIngreso">Nuevo ingreso</button>
+            </div>
+        
+            <form class="principal__principal-formulario" action="" id="principal__principal-formulario">
+                <div class="principal__principal-valor">
+                    <label for="principal__principal-valor">Ingresá el valor obtenido: </label>
+                    <br>
+                    <input class="principal__principal-valor" type="number" name="principal__principal-valor"
+                        id="principal__principal-valor" placeholder="Ingresá el valor acá" required>mg/dl
+                </div>
+                <div class="principal__principal-fecha">
+                    <label for="principal__principal-fecha">Ingresá la fecha del control: </label>
+                    <br>
+                    <input type="datetime-local" name="principal__principal-fecha" id="principal__principal-fecha" required>
+                </div>
+                <br>
+                <div class="principal__principal-botones">
+                    <button class="principal__principal-boton-registrar" onclick="registrarDato()">Registrar</button>
+                    <button class="principal__principal-boton-cancelar" id="btnCancelarIngreso" onclick="cancelarIngreso(event); showButton()">Cancelar</button>
+                </div>
+            </form>
+
+        </div>
+    </main>
+    <footer class="principal__principal-footer" id="principal__principal-footer">
+        <p>Desarrollado por <a href="https://www.linkedin.com/in/santiagobovina" target="_blank">Santiago Bovina</a></p>
+    </footer>
+
+    <script src="/js/scripts.js"></script>
+
+</body>
+</html>

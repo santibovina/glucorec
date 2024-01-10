@@ -226,6 +226,11 @@ form p {
     margin-bottom: 1rem;
 }
 
+.menu__principal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .menu__principal-logo img {
     margin-left: 3rem;
     width: 60%;
@@ -263,19 +268,6 @@ form p {
     cursor: pointer;
     visibility: visible;
 }
-
-/* .principal__principal-boton-datos {
-    background-color: #222222;
-    border: 0;
-    color: #ffe66b;
-    border-radius: 5px;
-    font-size: 1rem;
-    padding: 0.5rem;
-    width: 11rem;
-    height: 4rem;
-    cursor: pointer;
-    margin-top: 0.43rem;
-} */
 
 .principal__principal {
     display: flex;
@@ -383,3 +375,6 @@ input[type="datetime-local"] {
     text-decoration: none;
     color: #ffe66b;
 }
+
+
+/* ---------MEDIA QUERIES--------- */

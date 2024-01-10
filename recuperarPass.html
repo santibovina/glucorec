@@ -9,7 +9,7 @@
 <body>
     <div class="container__login">
         <div class="container__login-logo">
-            <img src="/img/glucorec_logo.svg" alt="logo glucorec">
+            <a href="index.html"><img src="/img/glucorec_logo.svg" alt="logo glucorec"></a>
         </div>
         <div class="formulario__recuperarPass">
             <h3>Recuperar Contraseña</h3>
@@ -19,7 +19,7 @@
                 <label for="usuario">Email: </label><br>
 
                 <div class="formulario__recuperarPass-input">
-                    <input type="text" size="35" name="usuario" id="usuario" required placeholder="user@user.com">
+                    <input type="text" size="35" name="email" id="email" placeholder="user@user.com" required>
                     <button onclick="mailEnviado()" id="botonEnviar" type="submit">Enviar</button>
                 </div>
 
@@ -28,13 +28,13 @@
 
                 <div class="formulario__recuperarPass-registro">
                     <p id="formulario__recuperarPass-texto">Nuevo por acá?</p>
-                    <a id="crearCuenta" href="formRegistro.html"><button id="BotonCrearCuentaRecuperar" type="button">Crear cuenta</button></a>
+                    <a id="crearCuenta" href="#"><button id="BotonCrearCuentaRecuperar" type="button">Crear cuenta</button></a>
                 </div>
 
             </form>
         </div>
     </div>
 
-    <script src="/js/login.js"></script>
+    <script src="/js/scripts.js"></script>
 </body>
 </html>

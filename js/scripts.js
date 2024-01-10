@@ -9,7 +9,7 @@ function iniciarSesion() {
 
     if (usuario === usuarioCorrecto && password === contrasenaCorrecta) {
         // Redirigir a la página en caso de acceso correcto
-        window.location.href = 'index.html';
+        window.location.href = 'logged.html';
     } else {
         alert('Usuario o contraseña incorrectos!');
     }
@@ -18,7 +18,14 @@ function iniciarSesion() {
 // Función Alert Recuperar Contraseña
 
 function mailEnviado() {
-    alert("Te enviamos un mail con la nueva contraseña!\nPor favor revisa tu bandeja de entrada o spam.");
+    const mailUsuario = document.getElementById('email').value;
+    console.log(document.getElementById('email').value)
+    if (mailUsuario === '') {
+        alert("Por favor, ingresa una dirección de email válida.");
+    } else {
+        alert("Te enviamos un mail con la nueva contraseña!\nPor favor, revisa tu bandeja de entrada o spam.");
+        window.location.href = 'index.html';
+    }
 }
 
 // Función click Nuevo Ingreso
@@ -53,9 +60,10 @@ function registrarDato() {
     const fechaMedicion = document.getElementById("principal__principal-fecha").value;
 
     if(valorMedicion === '' && fechaMedicion === '') {
-        alert("Por favor ingresar los datos requeridos.");
+        alert("Por favor, ingresa los datos requeridos.");
     } else {
         alert("Registramos correctamente los datos ingresados.");
+        window.location.href = "logged.html";
     }
 }
 
