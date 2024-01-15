@@ -59,7 +59,7 @@ function registrarDato() {
     const valorMedicion = document.getElementById("principal__principal-valor").value;
     const fechaMedicion = document.getElementById("principal__principal-fecha").value;
 
-    if(valorMedicion === '' && fechaMedicion === '') {
+    if(valorMedicion === '' || fechaMedicion === '') {
         alert("Por favor, ingresa los datos requeridos.");
     } else {
         alert("Registramos correctamente los datos ingresados.");

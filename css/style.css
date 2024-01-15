@@ -377,4 +377,122 @@ input[type="datetime-local"] {
 }
 
 
-/* ---------MEDIA QUERIES--------- */
+/* ---------NUEVO USUARIO--------- */
+
+.formulario__registro {
+    height: 50rem;
+}
+
+.formulario__registro-header {
+    display: flex;
+    flex-wrap: wrap;
+    height: 4rem;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formulario__registro-logo img {
+    margin-left: 3rem;
+    width: 60%;
+}
+
+.formulario__registro-titulo {
+    margin-right: 3rem;
+
+}
+
+.formulario__registro-nuevo {
+    margin-top: 3rem;
+}
+
+.formulario__registro-info-registro {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    margin-left: 28rem;
+    margin-bottom: 5rem;
+    border-radius: 1rem;
+    height: max-content;
+    padding: 2rem;
+    width: 26rem;
+    background-color: #dbdbdb;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 1px 1px 10px 5px rgba(20, 20, 20, 0.23);
+    border: 0;
+}
+
+.formulario__registro-info-registro h3 {
+    margin-bottom: 1.5rem;
+    border-bottom: solid #222222 0.5px;
+    width: fit-content;
+    height: 1.6rem;
+}
+
+#formulario__registro-datos-personales {
+    margin-bottom: 1.5rem;
+    border-bottom: solid #222222 0.5px;
+    width: fit-content;
+    height: 1.6rem;
+    margin-top: 2rem;
+}
+
+input[type="date"] {
+   border: 0;
+   font-size: 0.8rem;
+   color: #222222;
+   width: 8.5rem;
+   border-radius: 5px;
+   outline: none;
+   height: 2rem;
+}
+
+.formulario__registro-tipodiabetes {
+    display: block;
+    margin-top: 0.8rem;
+}
+
+.formulario__registro-genero {
+    display: block;
+}
+
+input[type="text"].formulario__registro-aniosevolucion {
+    border: 0;
+    color: #222222;
+    width: 5rem;
+    border-radius: 5px;
+    outline: none;
+    height: 2rem;
+}
+
+input[type="text"].formulario__registro-aniosevolucion:focus {
+    border: transparent;
+    border-bottom: solid #222222 2px;
+}
+
+input[type="text"].formulario__registro-controles-cantidad {
+    border: 0;
+    color: #222222;
+    width: 5rem;
+    border-radius: 5px;
+    outline: none;
+    height: 2rem;
+}
+
+input[type="text"].formulario__registro-controles-cantidad:focus {
+    border: transparent;
+    border-bottom: solid #222222 2px;
+}
+
+.formulario__login-botonRegistrarme {
+    background-color: #222222;
+    border: 0;
+    color: #ffe66b;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0.5rem;
+    width: 22rem;
+    height: 2.6rem;
+    cursor: pointer;
+    margin-top: 2rem;
+}
