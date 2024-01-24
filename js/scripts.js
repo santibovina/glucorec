@@ -62,8 +62,54 @@ function registrarDato() {
     if(valorMedicion === '' || fechaMedicion === '') {
         alert("Por favor, ingresa los datos requeridos.");
     } else {
+        var params = new URLSearchParams(window.location.search);
+        var usuario = params.get('nombreUsuario');
+        window.location.href = 'logged.html?nombreUsuario=' + encodeURIComponent(usuario);
         alert("Registramos correctamente los datos ingresados.");
-        window.location.href = "logged.html";
     }
 }
 
+// Validación registro nuevo usuario
+
+function registroNuevoUsuario() {
+    const pass1 = document.getElementById("passwordRegistro").value;
+    const pass2 = document.getElementById("passwordRegistro2").value;
+    const fechaNac = document.getElementById("nacimiento").value;
+
+    if(pass1 === '' || pass2 === '' || fechaNac === '') {
+        alert("Por favor, completa todos los campos del formulario");
+
+    } else {
+
+        document.getElementById('formulario__registro-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+        
+            var usuario = document.getElementById('nombreUsuario').value;
+        
+            window.location.href = 'logged.html?nombreUsuario=' + encodeURIComponent(usuario);
+
+            alert("Gracias por registrarte!");
+        });
+    }
+}
+
+// Función mostrar nombre de usuario
+
+function obtenerNombre() {
+    var params = new URLSearchParams(window.location.search);
+    var usuario = params.get('nombreUsuario');
+    return usuario || '';
+}
+
+function mostrarNombre() {
+    var nombreUsuario = obtenerNombre();
+    console.log(nombreUsuario);
+    var usuarioRegistrado = document.getElementById('usuarioRegistrado');
+
+    if (nombreUsuario) {
+        usuarioRegistrado.textContent = 'Hola ' + nombreUsuario + '!';
+    } else {
+        usuarioRegistrado.textContent = 'Bienvenido';
+    }
+}
+mostrarNombre();

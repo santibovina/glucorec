@@ -140,7 +140,12 @@ form p {
     cursor: pointer;
 }
 
-
+.menu__usuario-imagen {
+    border: solid #222222 .15rem;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+}
 
 
 /* ---------RECUPERAR PASS--------- */
@@ -244,6 +249,10 @@ form p {
 
 .menu__usuario {
     margin-right: 3rem;
+    width: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .principal__principal-botones-opciones {
@@ -410,7 +419,7 @@ input[type="datetime-local"] {
     display: flex;
     flex-wrap: wrap;
     margin-top: 4rem;
-    margin-left: 28rem;
+    margin-left: 31rem;
     margin-bottom: 5rem;
     border-radius: 1rem;
     height: max-content;
@@ -491,7 +500,7 @@ input[type="text"].formulario__registro-controles-cantidad:focus {
     border-radius: 5px;
     font-size: 1rem;
     padding: 0.5rem;
-    width: 22rem;
+    width: 19rem;
     height: 2.6rem;
     cursor: pointer;
     margin-top: 2rem;
